@@ -1,2 +1,2 @@
-# IoT.Starter.Pi.Lumi
+# IoT.Home.Lumi
 Home Intelligence with Raspberry Pi
