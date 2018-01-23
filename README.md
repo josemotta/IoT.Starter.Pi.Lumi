@@ -269,6 +269,21 @@ The session below shows the live action.
 
 ## Checking results
 
-There are a couple ways to check the `home-web-ir` with the Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response fields, like message body, response code, etc. Another simple way is to  address the service directly with the browser. Following are both examples shown at screen shots taken from a x64 machine with Windows 10.
+There are a couple ways to check the `home-web-ir` with Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response fields, like message body, response code and headers, etc. Another simple way is to  address the service directly with the browser.
+
+Following are examples taken from a x64 machine with Windows 10, showing the installed remotes at RPI host.
 
 ![](https://i.imgur.com/nyIoLDh.png)
+
+We just need to append the `remote` name to the browser address to get its respective IR codes, as shown below.
+
+![](https://i.imgur.com/tOPyoD4.png)
+
+Testing the IR output requires the swagger IO interface, to generate the POST command with "Try it out!" button.
+
+![](https://i.imgur.com/8RpCoXc.png)
+
+You can see that Samsung monitor answered to "KEY_VOLUMEUP" command as expected.
+
+Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**!!
+
