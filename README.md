@@ -239,3 +239,5 @@ The io.swagger service was the only change at `lirc-compose.yml`. The image for 
 
 A docker volume is created at `/var/run/lirc`, insuring proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host. Since other services from `IoT.Starter.Pi.Thing` are the same, `home-web` to `home-web-ir` is the only change from `IoT.Starter.Pi.Thing` to `IoT.Starter.Pi.Lumi`.
 	
+## Running at RPI
+
