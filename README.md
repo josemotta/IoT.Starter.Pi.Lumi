@@ -29,7 +29,9 @@ Following the API first strategy, a new [API version 1.0.2](https://app.swaggerh
 
 ### Generate RemoteApi
 
-After we changed the swagger file to Version 1.0.2, SwaggerHub generated automatically the `RemoteApi` controller code. The "Upgrading the API" is explained at [IoT.Starter.Pi.Core](https://www.codeproject.com/Articles/1220930/IoT-Starter-Raspberry-Pi-Core), please take a look there if you have any doubts. Then the generated code was tweaked to fit our objectives, resulting on the four operations listed below:
+After we changed the swagger file to Version 1.0.2, SwaggerHub generated automatically the `RemoteApi` controller code. Do you remember "Upgrading the API"? It was explained at [IoT.Starter.Pi.Core](https://www.codeproject.com/Articles/1220930/IoT-Starter-Raspberry-Pi-Core), please take a look there if you have any doubts.
+
+Then, the generated code was tweaked to fit the objective, resulting on the four operations that follows:
 
     public class RemoteApiController : Controller
     { 
