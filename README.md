@@ -2,7 +2,7 @@
 
 #### Home Intelligence with Raspberry Pi
 
-### IoT.Starter.Pi.Thing for a Universal Remote Control
+### An embryo for Home Intelligence using Raspberry Pi with Linux powered by Lirc.
 
 ## Introduction
 
