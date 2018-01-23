@@ -275,11 +275,11 @@ Following are examples taken from a x64 machine with Windows 10, showing the ins
 
 ![](https://i.imgur.com/nyIoLDh.png)
 
-We just need to append the `remote` name to the browser address to get its respective IR codes, as shown below. You can see that Samsung monitor answered to "KEY_VOLUMEUP" command as expected.
+We just need to append the `remote` name to the browser address to get its respective IR codes, as shown below.
 
 ![](https://i.imgur.com/tOPyoD4.png)
 
-Testing the IR output requires the swagger IO interface, to generate the POST command with "Try it out!" button.
+Testing the IR output requires the swagger IO interface, to generate the POST command with "Try it out!" button. You can notice that Samsung monitor answered to "KEY_VOLUMEUP" command as expected.
 
 ![](https://i.imgur.com/8RpCoXc.png)
 
