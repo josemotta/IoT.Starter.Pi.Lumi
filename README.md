@@ -241,3 +241,36 @@ A docker volume is created at `/var/run/lirc`, insuring proper communication bet
 	
 ## Running at RPI
 
+Before running the tests, please note that Lirc should be properly installed and configured according to [RPI Setup instructions](https://github.com/josemotta/IoT.Starter.Pi.Lirc/blob/master/RPI_Setup.md).
+
+Following is the command to download and run home-web-ir, including the docker volume configuration:
+
+	docker run --privileged -p 5010:5010 -d -it --name=home-web-ir -v /var/run/lirc:/var/run/lirc josemottalopes/home-web-ir:latest
+
+The session below shows the live action.
+
+	root@lumi:~# docker run --privileged -p 5010:5010 -d -it --name=home-web-ir -v /var/run/lirc:/var/run/lirc josemottalopes/home-web-ir:latest
+	Unable to find image 'josemottalopes/home-web-ir:latest' locally
+	latest: Pulling from josemottalopes/home-web-ir
+	0d9fbbfaa2cd: Already exists
+	b015fdc7d33a: Already exists
+	60aaa226f085: Already exists
+	01963091a185: Already exists
+	a289a8a5c81a: Already exists
+	9432c55829c7: Already exists
+	87334e3159b5: Already exists
+	08a216585c0f: Pull complete
+	ac1e370475ca: Pull complete
+	ed21dfb3a130: Pull complete
+	885b38cb4c35: Pull complete
+	f8526fd2a07f: Pull complete
+	Digest: sha256:c374826cfd091ed89fb9da3992bad4d06488fb0152a44d5110401f5ff41de793
+	Status: Downloaded newer image for josemottalopes/home-web-ir:latest
+	3c11eeecbc26b258e3d57191f2d4ec5d96e60c1bd4478e334da6ebc77a9c222c
+	root@lumi:~#
+
+## Checking results
+
+There are a couple ways to check the `home-web-ir` with the Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response fields, like message body, response code, etc. Another simple way is to  address the service directly with the browser. Following are both examples shown at screen shots taken from a x64 machine with Windows 10.
+
+![](https://i.imgur.com/nyIoLDh.png)
