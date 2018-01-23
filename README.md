@@ -21,4 +21,110 @@ Following the API first strategy, a new [API version 1.0.2](https://app.swaggerh
 
 ![](https://i.imgur.com/Mb5TWpO.png)
 
-### Generate home-web
+### Generate RemoteApi
+
+SwaggerHub generates automatically the `RemoteApi` controller code, according to instructions already explained at [IoT.Starter.Pi.Core](https://www.codeproject.com/Articles/1220930/IoT-Starter-Raspberry-Pi-Core) in the section "Upgrading the API". Please take a look if you have any doubts.
+
+Then the generated code was altered to fit the specification objectives, resulting on the following:
+
+    public class RemoteApiController : Controller
+    { 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>returns ir code from remote</remarks>
+        /// <param name="remote">Lirc remote</param>
+        /// <param name="code">ir code</param>
+        /// <response code="200">All the codes</response>
+        [HttpGet]
+        [Route("/motta/home/1.0.1/remotes/{remote}/{code}")]
+        [ValidateModelState]
+        [SwaggerOperation("GetRemoteCode")]
+        [SwaggerResponse(200, typeof(List<string>), "All the codes")]
+        public virtual IActionResult GetRemoteCode([FromRoute]string remote, [FromRoute]string code)
+        {
+            string example = ("/usr/bin/irsend list " + remote + " " + code).Bash();
+
+            return new ObjectResult(example);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>returns all ir codes from remote</remarks>
+        /// <param name="remote">Lirc remote</param>
+        /// <response code="200">All the codes</response>
+        [HttpGet]
+        [Route("/motta/home/1.0.1/remotes/{remote}")]
+        [ValidateModelState]
+        [SwaggerOperation("GetRemoteCodes")]
+        [SwaggerResponse(200, typeof(List<string>), "All the codes")]
+        public virtual IActionResult GetRemoteCodes([FromRoute]string remote)
+        {
+            string example = (@"/usr/bin/irsend list " + remote + @" """"").Bash();
+
+            return new ObjectResult(example);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>returns all installed remotes</remarks>
+        /// <param name="skip">number of records to skip</param>
+        /// <param name="limit">max number of records to return</param>
+        /// <response code="200">All the installed remotes</response>
+        [HttpGet]
+        [Route("/motta/home/1.0.1/remotes")]
+        [ValidateModelState]
+        [SwaggerOperation("GetRemotes")]
+        [SwaggerResponse(200, typeof(List<string>), "All the installed remotes")]
+        public virtual IActionResult GetRemotes([FromQuery]int? skip, [FromQuery]int? limit)
+        {
+            string example = (@"/usr/bin/irsend list """" """"").Bash();
+
+            return new ObjectResult(example);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>flashes ir code simulating the remote control</remarks>
+        /// <param name="remote">Lirc remote</param>
+        /// <param name="code">ir code</param>
+        /// <response code="200">response</response>
+        [HttpPost]
+        [Route("/motta/home/1.0.1/remotes/{remote}/{code}")]
+        [ValidateModelState]
+        [SwaggerOperation("SendRemoteCode")]
+        [SwaggerResponse(200, typeof(ApiResponse), "response")]
+        public virtual IActionResult SendRemoteCode([FromRoute]string remote, [FromRoute]string code)
+        {
+            string example = (@"/usr/bin/irsend send_once " + remote + " " + code).Bash();
+
+            return new ObjectResult(example);
+        }
+    }
+ 
+You can notice that `irsend` commands are used in all operations! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command is issued:
+
+	pi@lumi:~ $ irsend list "" ""
+	
+
+The code equivalent is shown below:
+
+        public virtual IActionResult GetRemotes([FromQuery]int? skip, [FromQuery]int? limit)
+        {
+            string example = (@"/usr/bin/irsend list """" """"").Bash();
+
+            return new ObjectResult(example);
+        }
+
+The `HttpPost` operation get `remote` and `code` parameters to blast the command through the IR output. Please see again the details at `SendRemoteCode` below: 
+
+        public virtual IActionResult SendRemoteCode([FromRoute]string remote, [FromRoute]string code)
+        {
+            string example = (@"/usr/bin/irsend send_once " + remote + " " + code).Bash();
+
+            return new ObjectResult(example);
+        }
+
