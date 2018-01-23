@@ -116,7 +116,7 @@ The equivalent code is shown below:
             return new ObjectResult(example);
         }
 
-The `HttpPost` operation get `remote` and `code` parameters to blast the command through the IR output. Please see again the details at `SendRemoteCode` below: 
+The `HttpPost` operation get `remote` and `code` parameters to blast the command through the IR output. The details at `SendRemoteCode` are shown below: 
 
         public virtual IActionResult SendRemoteCode([FromRoute]string remote, [FromRoute]string code)
         {
