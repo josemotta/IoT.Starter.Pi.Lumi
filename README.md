@@ -282,7 +282,7 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 ![](https://i.imgur.com/8RpCoXc.png)
 
-Please check the instruction for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize memory at your RPI.
+Please check the instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize memory at your RPI.
 
 I hope you enjoyed this series! Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives!!
 
