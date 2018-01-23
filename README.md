@@ -153,7 +153,7 @@ As already shown at `Lirc-Console`, the `ShellHelper` posted by [loune.net](http
 
 ## `home-web` powered by Lirc
 
-In order to add Lirc support to `home-web` docker image, we apply the same strategy used before to install Lirc before building the web service.
+In order to add Lirc support to the project, we apply the same strategy used before, installing Lirc before building the web service. The changes done at dockerfile and docker-compose are listed below.
 
 #### lirc-web.dockerfile
 
@@ -203,7 +203,7 @@ The `lirc-web.dockerfile` shown below use the `dotnet:2.0.0-runtime-stretch-arm3
 
 #### lirc-compose.yml
 
-The io.swagger service was the only change at the new `lirc-compose.yml`, where a volume is created at `/var/run/lirc` insuring the proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host.
+The io.swagger service was the only change at the new `lirc-compose.yml`. A docker volume is created at `/var/run/lirc` insuring the proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host.
 
 	services:
 	  io.swagger:
