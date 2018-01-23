@@ -17,7 +17,7 @@ The objective now is to extend the `Thing` web services to allow IR remotes and 
 
 ## API first
 
-Following the API first strategy, a new [API version 1.0.2](https://app.swaggerhub.com/apis/motta/home/1.0.2) is created and summarized at picture below. The `GET` operations should identify remotes and their respective IR codes. The `POST` operation reflects the intention to create routes to fire IR blasts for remotes already installed at RPI host, using Lirc software.     
+Following the API first strategy, a new [API version 1.0.2](https://app.swaggerhub.com/apis/motta/home/1.0.2) is created and summarized at picture below, showing a new `RemoteApi` controller. The `GET` operations should identify remotes and their respective IR codes. The `POST` operation reflects the intention to create routes to fire IR blasts for remotes already installed at RPI host, using Lirc software.     
 
 ![](https://i.imgur.com/Mb5TWpO.png)
 
