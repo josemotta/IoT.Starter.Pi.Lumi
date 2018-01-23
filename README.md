@@ -120,7 +120,7 @@ The `HttpPost` operation get `remote` and `code` parameters to blast the command
 
 	pi@lumi:~ $ irsend SEND_ONCE LED_44_KEY CYAN
 
-The details at `SendRemoteCode` are shown below: 
+The `SendRemoteCode` shows the equivalent code below: 
 
         public virtual IActionResult SendRemoteCode([FromRoute]string remote, [FromRoute]string code)
         {
