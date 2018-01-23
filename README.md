@@ -216,7 +216,7 @@ Then, same build used at IoT.Starter.Pi.Thing completes the `home-web-ir` buildi
 
 #### lirc-compose.yml
 
-The io.swagger service was the only change at `lirc-compose.yml`. The image for `home-web` powered by Lirc changed to `home-web-ir`, to differentiate from `home-web` with no Lirc support.
+The io.swagger service was the only change at `lirc-compose.yml`. The image for web service powered by Lirc changed to `home-web-ir`, to differentiate from previous `home-web` with no Lirc support.
 
 
 	services:
