@@ -15,7 +15,7 @@ The third part [IoT.Starter.Pi.Lirc](https://www.codeproject.com/Articles/122655
 
 This is a kind of second part of third part. Sorry if you get confused, but the objective now is to extend the `Thing` web services to allow IR remotes and their respective codes to be considered by the API. Powered by Lirc, the `IoT.Starter.Pi.Thing` can be useful on IoT initiatives that require infrared support.
 
-Then we will have two `Things` to use as starter kits:
+Then we will have two `Things` available as starter kit:
 
 - **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT
 
