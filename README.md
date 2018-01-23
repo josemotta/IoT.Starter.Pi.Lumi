@@ -23,13 +23,13 @@ We have then two `Things`, available as IoT starter kits:
 
 ## API first
 
-Following the API first strategy, a new [API version 1.0.2](https://app.swaggerhub.com/apis/motta/home/1.0.2) is created and summarized at picture below, adding a `RemoteApi` controller to existing specification. The `GET` operations should identify remotes and their respective IR codes. The `POST` operation reflects the intention to fire IR blasts for remotes already installed at RPI host, using Lirc software.     
+Following the API first strategy, a new [API version 1.0.2](https://app.swaggerhub.com/apis/motta/home/1.0.2) is created and summarized below, adding a `RemoteApi` controller to the existing specification. The `GET` operations should identify remotes and their respective IR codes. The `POST` operation reflects the intention to fire IR blasts for remotes already installed at RPI host, using Lirc software.     
 
 ![](https://i.imgur.com/Mb5TWpO.png)
 
 ### Generate RemoteApi
 
-SwaggerHub generates automatically the `RemoteApi` controller code, according to instructions already explained at [IoT.Starter.Pi.Core](https://www.codeproject.com/Articles/1220930/IoT-Starter-Raspberry-Pi-Core) in the section "Upgrading the API". Please take a look if you have any doubts. Then the generated code was tweaked to fit our objectives, resulting on the four operations listed below:
+After we changed the swagger file to Version 1.0.2, SwaggerHub generated automatically the `RemoteApi` controller code. The "Upgrading the API" is explained at [IoT.Starter.Pi.Core](https://www.codeproject.com/Articles/1220930/IoT-Starter-Raspberry-Pi-Core), please take a look there if you have any doubts. Then the generated code was tweaked to fit our objectives, resulting on the four operations listed below:
 
     public class RemoteApiController : Controller
     { 
