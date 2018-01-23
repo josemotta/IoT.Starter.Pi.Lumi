@@ -125,3 +125,100 @@ The `HttpPost` operation get `remote` and `code` parameters to blast the command
             return new ObjectResult(example);
         }
 
+As already shown at `Lirc-Console`, the `ShellHelper` posted by [loune.net](https://loune.net/2017/06/running-shell-bash-commands-in-net-core/) does the dirty work:
+
+    public static class ShellHelper
+    {
+        public static string Bash(this string cmd)
+        {
+            var escapedArgs = cmd.Replace("\"", "\\\"");
+
+            var process = new Process()
+            {
+                StartInfo = new ProcessStartInfo
+                {
+                    FileName = "/bin/bash",
+                    Arguments = $"-c \"{escapedArgs}\"",
+                    RedirectStandardOutput = true,
+                    UseShellExecute = false,
+                    CreateNoWindow = true,
+                }
+            };
+            process.Start();
+            string result = process.StandardOutput.ReadToEnd();
+            process.WaitForExit();
+            return result;
+        }
+    }
+
+## `home-web` powered by Lirc
+
+In order to add Lirc support to `home-web` docker image, we apply the same strategy used before to install Lirc before building the web service.
+
+#### lirc-web.dockerfile
+
+The `lirc-web.dockerfile` shown below use the `dotnet:2.0.0-runtime-stretch-arm32v7` image as base. Before installing Lirc, the OS is updated and upgraded. After Lirc package installation, the RPI configuration is copied to container, assuring that remotes installed at RPI host will be seen. The /boot/config.txt and /etc/lirc/lirc_options.conf are  updated and remote config files are moved to /etc/lirc/lircd.conf.d, in order to keep the same setup installed at RPI host.
+
+	FROM microsoft/dotnet:2.0.0-runtime-stretch-arm32v7 AS base
+	ENV DOTNET_CLI_TELEMETRY_OPTOUT 1
+	ENV ASPNETCORE_URLS "http://*:5010"
+	WORKDIR /app
+	
+	RUN \
+	  apt-get update \
+	  && apt-get upgrade -y \
+	  && apt-get install -y \
+	       lirc \
+	  --no-install-recommends && \
+	  rm -rf /var/lib/apt/lists/*
+	
+	RUN \
+	  mkdir -p /var/run/lirc \
+	  && rm -f /etc/lirc/lircd.conf.d/devinput.*
+	
+	COPY Lirc/setup/config.txt /boot/config.txt
+	COPY Lirc/setup/lirc_options.conf /etc/lirc/lirc_options.conf 
+	COPY Lirc/setup/ir-remote.conf /etc/modprobe.d/ir-remote.conf
+	COPY Lirc/remotes /etc/lirc/lircd.conf.d
+	
+	FROM microsoft/dotnet:2.0-sdk AS build
+	ENV DOTNET_CLI_TELEMETRY_OPTOUT 1
+	ENV ASPNETCORE_URLS "http://*:5010"
+	WORKDIR /src
+	COPY *.sln ./
+	COPY *.dcproj ./
+	COPY src/IO.Swagger/IO.Swagger.csproj src/IO.Swagger/
+	RUN dotnet restore src/IO.Swagger/
+	COPY . .
+	WORKDIR /src/src/IO.Swagger
+	RUN dotnet build -c Release -r linux-arm -o /app
+	
+	FROM build AS publish
+	RUN dotnet publish -c Release -r linux-arm -o /app
+	
+	FROM base AS final
+	WORKDIR /app
+	COPY --from=publish /app .
+	ENTRYPOINT ["dotnet", "IO.Swagger.dll"]
+
+#### lirc-compose.yml
+
+The io.swagger service was the only change at the new `lirc-compose.yml`, where a volume is created at `/var/run/lirc` insuring the proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host.
+
+	services:
+	  io.swagger:
+	    container_name: home-web
+	    image: josemottalopes/home-web
+	    build:
+	      context: .
+	      dockerfile: Lirc/lirc-web.Dockerfile
+	    ports:
+	    - "5010"
+	    network_mode: bridge
+	    privileged: true
+	    restart: always
+	    volumes:
+	    - /var/run/lirc:/var/run/lirc
+	    environment:
+	      - ASPNETCORE_ENVIRONMENT=Release
+	
