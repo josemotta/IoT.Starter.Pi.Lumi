@@ -213,6 +213,8 @@ The `lirc-web.dockerfile` shown below use the `dotnet:2.0.0-runtime-stretch-arm3
 	COPY --from=publish /app .
 	ENTRYPOINT ["dotnet", "IO.Swagger.dll"]
 
+Then, same build used at IoT.Starter.Pi.Thing completes the `home-web` building.
+
 #### lirc-compose.yml
 
 The io.swagger service was the only change at the new `lirc-compose.yml`. A docker volume is created at `/var/run/lirc` insuring the proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host.
