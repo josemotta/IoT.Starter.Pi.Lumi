@@ -17,9 +17,9 @@ This is a kind of second part of third part. Sorry if you get confused, but the 
 
 Then we will have two `Things` available as starter kit:
 
-- **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT
+- **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT.
 
-- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT powered by Lirc
+- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT powered by Lirc.
 
 ## API first
 
