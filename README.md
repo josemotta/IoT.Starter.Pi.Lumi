@@ -13,7 +13,7 @@ Designed as a starter kit for IoT initiatives, it provides a solid and structure
 
 The third part is [IoT.Starter.Pi.Lirc](https://www.codeproject.com/Articles/1226559/IoT-Starter-Raspberry-Pi-Lirc), dedicated to IoT projects that require infrared devices. A test environment is created by a `Console` powered by Lirc, the Linux Infrared Remote Control.  The `Thing` is now able to benefit from what we learned from these tests.
 
-At this second part of the third part, the objective is to extend the `Thing` web services to allow IR remotes and their respective codes to be considered by the API. Powered by Lirc, the `IoT.Starter.Pi.Lumi` is useful on IoT initiatives that require infrared support.
+At this complement of the third part, the objective is to extend the `Thing` web services to allow IR remotes and their respective codes to be considered by the API. Powered by Lirc, the `IoT.Starter.Pi.Lumi` is useful on IoT initiatives that require infrared support.
 
 We have then two `Things`, available as IoT starter kits:
 
