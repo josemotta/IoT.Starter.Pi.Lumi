@@ -103,7 +103,7 @@ SwaggerHub generates automatically the `RemoteApi` controller code, according to
         }
     }
  
-You can notice that `irsend` commands are used in all operations. Cool! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued:
+You can notice that `irsend` commands are used in all operations! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued:
 
 	pi@lumi:~ $ irsend list "" ""
 	
