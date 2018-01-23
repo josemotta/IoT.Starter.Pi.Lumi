@@ -129,7 +129,7 @@ The `SendRemoteCode` shows the equivalent below:
             return new ObjectResult(example);
         }
 
-As already shown at `Lirc-Console`, the `ShellHelper` posted by [loune.net](https://loune.net/2017/06/running-shell-bash-commands-in-net-core/) does the dirty work:
+As already shown at `Lirc-Console`, the `ShellHelper` posted by [loune.net](https://loune.net/2017/06/running-shell-bash-commands-in-net-core/) does the dirty work, starting a bash process, capturing the answer, and returning the string result.
 
     public static class ShellHelper
     {
