@@ -163,7 +163,7 @@ As already shown at `Lirc-Console`, the `ShellHelper` posted by [loune.net](http
         }
     }
 
-## `home-web` powered by Lirc
+## `home-web-ir` powered by Lirc
 
 In order to add Lirc support to the project, we apply the same strategy used before, installing Lirc before building the web service. The changes done at dockerfile and docker-compose are listed below.
 
