@@ -111,7 +111,7 @@ Then, the generated code was tweaked to fit the objective, resulting on four sim
         }
     }
  
-You can notice that `irsend` commands are used in all operations! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued at a Bash screen at host:
+You can notice that `irsend` commands are used in all them! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued by Bash at host:
 
 	pi@lumi:~ $ irsend list "" ""
 	
@@ -124,7 +124,7 @@ The equivalent code is shown below:
             return new ObjectResult(example);
         }
 
-The `HttpPost` operation get `remote` and `code` parameters to blast the command through the IR output. The Bash command at RPI host would be, for example:
+The `HttpPost` operation has `remote` and `code` parameters, in order to properly blast IR codes through the output IR led. In this case, the `irsend` command at RPI host would be:
 
 	pi@lumi:~ $ irsend SEND_ONCE LED_44_KEY CYAN
 
