@@ -2,7 +2,7 @@
 
 #### Home Intelligence with Raspberry Pi
 
-### IoT.Starter.Pi.Thing powered by Linux Infrared Remote Control
+### IoT.Starter.Pi.Thing for a Universal Remote Control
 
 ## Introduction
 
