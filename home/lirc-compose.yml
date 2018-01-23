@@ -2,8 +2,8 @@ version: '3'
 
 services:
   io.swagger:
-    container_name: home-web
-    image: josemottalopes/home-web
+    container_name: home-web-ir
+    image: josemottalopes/home-web-ir
     build:
       context: .
       dockerfile: Lirc/lirc-web.Dockerfile

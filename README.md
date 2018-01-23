@@ -217,12 +217,13 @@ Then, same build used at IoT.Starter.Pi.Thing completes the `home-web` building.
 
 #### lirc-compose.yml
 
-The io.swagger service was the only change at the new `lirc-compose.yml`. A docker volume is created at `/var/run/lirc` insuring the proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host.
+The io.swagger service was the only change at `lirc-compose.yml`. The image for `home-web` powered by Lirc changed to `home-web-ir`, to differentiate from `home-web` with no Lirc support.
+
 
 	services:
 	  io.swagger:
-	    container_name: home-web
-	    image: josemottalopes/home-web
+	    container_name: home-web-ir
+	    image: josemottalopes/home-web-ir
 	    build:
 	      context: .
 	      dockerfile: Lirc/lirc-web.Dockerfile
@@ -235,4 +236,6 @@ The io.swagger service was the only change at the new `lirc-compose.yml`. A dock
 	    - /var/run/lirc:/var/run/lirc
 	    environment:
 	      - ASPNETCORE_ENVIRONMENT=Release
+
+A docker volume is created at `/var/run/lirc`, insuring proper communication between containers running `irsend` commands and Lirc output socket installed at RPI host. Since other services from `IoT.Starter.Pi.Thing` are the same, `home-web` to `home-web-ir` is the only change from `IoT.Starter.Pi.Thing` to `IoT.Starter.Pi.Lumi`.
 	
