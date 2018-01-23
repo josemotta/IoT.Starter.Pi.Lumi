@@ -268,7 +268,7 @@ The session below shows the live action.
 
 ## Checking results
 
-There are a couple ways to check `home-web-ir` with Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response, like message body, response code and headers, etc. Another simple way is to  address the service directly at the browser, using the `curl` command shown at "Request URL" field provided by Swagger IO.
+There are a couple ways to check `home-web-ir` with Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response, like message body, response code and headers, etc. Another simple way is to  address the service directly at the browser, using the `curl` command or "Request URL" fields provided by Swagger IO.
 
 Following are examples taken from a x64 machine with Windows 10, showing the installed remotes at RPI host.
 
