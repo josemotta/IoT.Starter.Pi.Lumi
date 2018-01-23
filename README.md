@@ -110,7 +110,7 @@ Then, the generated code was tweaked to fit the objective, resulting on the foll
         }
     }
  
-You can notice that `irsend` commands are used in all them! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued by Bash at host:
+You can notice that `irsend` command is used at all them! The `HttpGet` operations identify IR remotes and their respective codes. For example, to list all installed remotes, the following command should be issued by Bash at host:
 
 	pi@lumi:~ $ irsend list "" ""
 	
