@@ -2,7 +2,7 @@
 
 #### Home Intelligence with Raspberry Pi
 
-### An embryo for Home Intelligence using Raspberry Pi with Linux powered by Lirc.
+### An infrared embryo for Home Intelligence using Raspberry Pi with Linux.
 
 ## Introduction
 
