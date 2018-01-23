@@ -240,7 +240,7 @@ A docker volume is created at `/var/run/lirc`, insuring proper communication bet
 	
 ## Running at RPI
 
-Before running the tests, please note that Lirc should be properly installed and configured according to [RPI Setup instructions](https://github.com/josemotta/IoT.Starter.Pi.Lirc/blob/master/RPI_Setup.md). Following is the command to download and run home-web-ir, including the docker volume configuration:
+Before running the tests, please note that Lirc should be properly installed and configured according to [RPI Setup instructions](https://github.com/josemotta/IoT.Starter.Pi.Lirc/blob/master/RPI_Setup.md). Following is the command to download and run home-web-ir, including  docker volume configuration:
 
 	docker run --privileged -p 5010:5010 -d -it --name=home-web-ir -v /var/run/lirc:/var/run/lirc josemottalopes/home-web-ir:latest
 
