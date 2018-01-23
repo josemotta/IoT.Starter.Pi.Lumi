@@ -11,7 +11,7 @@ This series, targeted to Raspberry Pi with Linux,  started with [IoT.Starter.Pi.
 The second part introduced  [IoT.Starter.Pi.Thing](https://www.codeproject.com/Articles/1224347/IoT-Starter-Raspberry-Pi-Thing), an  embryo for Home Intelligence using Raspberry Pi with Linux. 
 Designed as a starter kit for IoT initiatives, it provides a solid and structured platform to speed up product development. The  [starter kit concept](https://www.codeproject.com/Articles/1122233/IoT-Starter-Core-for-Netduino-Plus) encourages the teams to start working immediately on the product development.
 
-The third part [IoT.Starter.Pi.Lirc](https://www.codeproject.com/Articles/1226559/IoT-Starter-Raspberry-Pi-Lirc) is dedicated to IoT projects that require infrared devices. A test environment is created by a `Console` powered by Lirc, the Linux Infrared Remote Control.  The `Thing` is now able to benefit from what we learned from these tests.
+The third part, [IoT.Starter.Pi.Lirc](https://www.codeproject.com/Articles/1226559/IoT-Starter-Raspberry-Pi-Lirc), is dedicated to IoT projects that require infrared devices. A test environment is created by a `Console` powered by Lirc, the Linux Infrared Remote Control.  The `Thing` is now able to benefit from what we learned from these tests.
 
 This is a kind of second part of the third part, sorry for the confusion. The objective now is to extend the `Thing` web services to allow IR remotes and their respective codes to be considered by the API. Powered by Lirc, the `IoT.Starter.Pi.Thing` can be useful on IoT initiatives that require infrared support.
 
