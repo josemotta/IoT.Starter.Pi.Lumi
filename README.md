@@ -284,10 +284,9 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 Please check the instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
 
-- **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT initiatives, to be used on all projects.
- * nginx-proxy 
+I hope you enjoyed this series!
 
-- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, to be used with infrared (IR) projects.
+Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives. 
 
 | | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          :---: |  
@@ -297,7 +296,7 @@ Please check the instructions for [Updating RPI with latest images](https://gith
 | user interface     | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)       | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)      |  
 | web service  | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
 
-I hope you enjoyed this series!
 
-Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives!!
+
+
 
