@@ -290,10 +290,10 @@ Please check the instructions for [Updating RPI with latest images](https://gith
 - **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, to be used with infrared (IR) projects.
 
 | | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
-| :---         |     :---:      |          ---: |  
-| ssl proxy   | nginx-proxy     | nginx-proxy    |  
-| web ui     | home-ui       | home-ui      |  
-| web ui     | home-web       | home-web-ir      | 
+| :---         |     :---:      |          :---: |  
+| ssl proxy   | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)     | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)    |  
+| web ui     | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)       | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)      |  
+| web ui     | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
 
 I hope you enjoyed this series!
 
