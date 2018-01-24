@@ -288,6 +288,7 @@ I hope you enjoyed this series, I learned at lot for sure!
 
 Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives. 
 
+## IOT STARTER KITS
 | | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          :---: |  
 | description | embryo for IoT initiatives | embryo for IoT initiatives powered by Lirc | 
