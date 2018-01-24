@@ -266,6 +266,8 @@ The session below shows the live action.
 	3c11eeecbc26b258e3d57191f2d4ec5d96e60c1bd4478e334da6ebc77a9c222c
 	root@lumi:~#
 
+Please check further instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
+
 ## Checking results
 
 There are a couple ways to check `home-web-ir` with Internet browser. We can use the "Try it out!" button from Swagger IO and see detailed response, like message body, response code and headers, etc. Another simple way is to  address the service directly at the browser, using the `curl` command or the "Request URL" field provided by Swagger IO.
@@ -282,9 +284,7 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 ![](https://i.imgur.com/8RpCoXc.png)
 
-Please check the instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
-
-I hope you enjoyed this series!
+I hope you enjoyed this series, I learned at lot for sure!
 
 Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives. 
 
