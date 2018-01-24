@@ -266,7 +266,7 @@ The session below shows the live action.
 	3c11eeecbc26b258e3d57191f2d4ec5d96e60c1bd4478e334da6ebc77a9c222c
 	root@lumi:~#
 
-Please check further instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
+Please check further instructions about [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
 
 ## Checking results
 
