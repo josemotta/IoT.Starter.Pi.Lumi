@@ -292,8 +292,8 @@ Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.
 
 | starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          :---: |  
-| description | embryo for IoT | IR embryo for IoT, powered by Lirc | 
 | use | all projects |  infrared (IR) projects |  
+| description | embryo for IoT | IR embryo for IoT, powered by Lirc | 
 | ssl proxy   | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)     | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)    |  
 | user interface     | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)       | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)      |  
 | web service  | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
