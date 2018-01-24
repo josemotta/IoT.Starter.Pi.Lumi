@@ -284,6 +284,16 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 Please check the instructions for [Updating RPI with latest images](https://github.com/josemotta/IoT.Starter.Pi.Lumi/blob/master/Thing_Update.md) in order to optimize your RPI memory.
 
+- **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT initiatives, to be used on all projects.
+ * nginx-proxy 
+
+- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, to be used with infrared (IR) projects.
+
+| Left-aligned | Center-aligned | Right-aligned |  
+| :---         |     :---:      |          ---: |  
+| git status   | git status     | git status    |  
+| git diff     | git diff       | git diff      |  
+
 I hope you enjoyed this series!
 
 Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives!!
