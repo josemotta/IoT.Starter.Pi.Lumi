@@ -289,7 +289,7 @@ Please check the instructions for [Updating RPI with latest images](https://gith
 
 - **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, to be used with infrared (IR) projects.
 
-| **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** | Right-aligned |  
+| | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          ---: |  
 | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**   | git status     | git status    |  
 | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**     | git diff       | git diff      |  
