@@ -290,7 +290,7 @@ Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.
 
 ## IoT Starter Kits for Raspberry Pi with Linux
 
-| starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
+| IoT starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          :---: |  
 | description | embryo for IoT initiatives | embryo for IoT initiatives powered by Lirc | 
 | use | all projects |  infrared (IR) projects |  
