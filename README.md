@@ -2,7 +2,7 @@
 
 #### Home Intelligence with Raspberry Pi
 
-### An infrared embryo for Home Intelligence using Raspberry Pi with Linux.
+### An <infrared> embryo for Home Intelligence using Raspberry Pi with Linux.
 
 ## Introduction
 
