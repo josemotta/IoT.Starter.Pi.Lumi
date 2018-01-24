@@ -291,8 +291,9 @@ Please check the instructions for [Updating RPI with latest images](https://gith
 
 | | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          ---: |  
-| **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**   | git status     | git status    |  
-| **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**     | git diff       | git diff      |  
+| ssl proxy   | git status     | git status    |  
+| web srv     | git diff       | git diff      |  
+| web ui     | git diff       | git diff      | 
 
 I hope you enjoyed this series!
 
