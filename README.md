@@ -286,7 +286,7 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 ## Conclusion
 
-At this mission, we improved the API to a new version and added infrared  support to the `Thing` device. SwaggerHub automatically generated the changes for us, adding a new Controller that was merged to `home-web` project.
+At this mission, we improved the API to a new version that adds infrared  support to the `Thing` device. SwaggerHub automatically generated the changes for us, adding a new Controller that was merged to `home-web` project.
 
 This code was tweaked into a simple solution that transforms the RPI into a universal IR blaster. You can then use `http` commands to control a big legacy of IR controlled home gadgets, like air conditioner, heater, RGB light, tv, home teather, etc. Over #2,500 remotes are available at Lirc database, probably yours are there!
 
