@@ -305,5 +305,5 @@ I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.
 | web service  | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
 
 
-Please comment or fork repos to start nice IoT projects! 
+Please comment and fork repos to start nice IoT projects! 
 
