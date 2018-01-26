@@ -290,7 +290,7 @@ At this mission, we improved the API to a new version that adds infrared  suppor
 
 This code was tweaked into a simple solution that transforms the RPI into a universal IR blaster. You can then use `http` commands to control a big legacy of IR controlled home gadgets, like air conditioner, heater, RGB light, tv, home teather, etc. Over #2,500 remotes are available at Lirc database, probably yours are there!
 
-You can now develop a custom `home-ui` project that interface to users, using RemoteApi as starting point to build your IoT application!
+To build your IoT application, you should develop a custom `home-ui` project that  handles user interface, using RemoteApi as starting point!
 
 I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
 
