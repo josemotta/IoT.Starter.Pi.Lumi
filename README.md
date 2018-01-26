@@ -292,6 +292,8 @@ This code was tweaked into a simple solution that transforms the RPI into a univ
 
 Next step maybe developing a new `home-ui` that use the RemoteApi!
 
+I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
+
 ## IOT STARTER KITS
 
 | starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
@@ -302,8 +304,6 @@ Next step maybe developing a new `home-ui` that use the RemoteApi!
 | user interface     | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)       | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)      |  
 | web service  | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
 
-
-I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
 
 Please comment or repo forks to start nice IoT projects! 
 
