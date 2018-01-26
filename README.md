@@ -284,11 +284,20 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 ![](https://i.imgur.com/8RpCoXc.png)
 
-I hope you enjoyed this series, I learned at lot for sure. I´d appreciate comments and repo forks with nice projects!
+## Conclusion
 
-Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
+At this mission, we improved the API to a new version, in order to add infrared  support to the `Thing` device. SwaggerHub automatically generated the changes for us, adding a new Controller that was merged to `home-web` project.
+
+This code was tweaked into a simple solution that transforms the RPI into a universal IR blaster. You can then use `http` commands to control a big legacy of IR controlled home gadgets, like air conditioner, heater, RGB light, tv, home teather, etc. Over #2,500 remotes are available at Lirc database, probably yours are there!
+
+Next steps can develop the `home-ui` project to use the RemoteApi!
 
 ## IOT STARTER KITS
+
+I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
+
+Please comment or repo forks to start nice IoT projects! 
+
 
 | starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
 | :---         |     :---:      |          :---: |  
