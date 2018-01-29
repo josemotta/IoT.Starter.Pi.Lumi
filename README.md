@@ -292,6 +292,8 @@ The generated code was tweaked into a simple solution that   shows a RPI wired t
 
 Depending on your application objectives, you should now  develop a custom `home-ui` project that handles the user interface, using RemoteApi as starting point!
 
+Current ASP.NET MVC example is a suggestion, off course there are many other tools able to benefit from `home-web` API. But remember that since they both use same platform, `home-web` and `home-ui` share some image layers and  the memory is optimized.
+
 I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
 
 ## IOT STARTER KITS
