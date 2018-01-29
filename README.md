@@ -2,7 +2,7 @@
 
 #### Home Intelligence with Raspberry Pi
 
-### An INFRARED embryo for Home Intelligence using Raspberry Pi with Linux.
+### IoT.Starter.Pi.Thing growing into an embryo of a universal IR remote control.
 
 ## Introduction
 
