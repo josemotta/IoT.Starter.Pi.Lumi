@@ -288,11 +288,22 @@ Testing the IR output requires the swagger IO interface, to generate the POST co
 
 First, at this mission, we improved the API to a new version, adding infrared support to the `Thing` device. SwaggerHub automatically generated the code for us, adding a new Controller that was merged to `home-web` project.
 
-The generated code was tweaked into a simple solution that   shows a RPI wired to IR leds growing into an embryo of a universal IR remote control. You can then use `http`  to blast commands to a big legacy of IR controlled home gadgets, like air conditioner, heater, RGB light, tv, home teather, etc. Over #2,500 remotes are available at Lirc database, there's a big chance yours are already there!
+The generated code was tweaked into a simple solution that   shows a RPI wired to IR leds growing into an embryo of a universal IR remote control. You can then use `http`  to blast commands to a big legacy of IR controlled home gadgets, like air conditioner, heater, RGB light, tv, home teather, etc. Over #2,500 remotes are available at Lirc [database](http://lirc.sourceforge.net/remotes/), there's a big chance yours are already there!
 
 Depending on your application objectives, you should now  develop a custom `home-ui` project that handles the user interface, using `RemoteApi` as starting point! Current ASP.NET MVC `home-ui` is a suggestion, off course there are many other tools able to benefit from `home-web` API. But remember that since both use same .NET platform,  current `home-web` and `home-ui` share some image layers, optimizing memory.
 
 I hope you enjoyed this series, I learned at lot for sure. Have fun with **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** and **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** to speed up your IoT initiatives! 
+
+## IOT STARTER KITS
+
+| starter kit  | **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)** | **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)** |  
+| :---         |     :---:      |          :---: |  
+| useful for  | all projects |  infrared (IR) projects |  
+| description | embryo for IoT | IR embryo for IoT, powered by Lirc | 
+| ssl proxy   | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)     | [nginx-proxy](https://hub.docker.com/r/josemottalopes/nginx-proxy/)    |  
+| user interface     | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)       | [home-ui](https://hub.docker.com/r/josemottalopes/home-ui/)      |  
+| web service  | [home-web](https://hub.docker.com/r/josemottalopes/home-web/)       | [home-web-ir](https://hub.docker.com/r/josemottalopes/home-web-ir/)      | 
+
 
 ![](https://i.imgur.com/g0n40hd.png)
 
