@@ -212,7 +212,7 @@ The `lirc-web.dockerfile` shown below use the `dotnet:2.0.0-runtime-stretch-arm3
 	COPY --from=publish /app .
 	ENTRYPOINT ["dotnet", "IO.Swagger.dll"]
 
-Then, same build used at IoT.Starter.Pi.Thing completes the `home-web-ir` building.
+Then, same build used at `IoT.Starter.Pi.Thing` completes the `home-web-ir` building.
 
 #### lirc-compose.yml
 
