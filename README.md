@@ -18,7 +18,7 @@ There will be then two `Things`, available as IoT starter kits:
 
 - **[IoT.Starter.Pi.Thing](https://github.com/josemotta/IoT.Starter.Pi.Thing)**:	an embryo for IoT initiatives, to be used on all projects.
 
-- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, to be used with infrared (IR) projects.
+- **[IoT.Starter.Pi.Lumi](https://github.com/josemotta/IoT.Starter.Pi.Lumi)**: an embryo for IoT initiatives powered by Lirc, for infrared (IR) projects.
 
 ## API first
 
